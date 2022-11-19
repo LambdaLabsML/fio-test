@@ -2,8 +2,8 @@
 #TEST_SIZE=${1:-"64m"}
 #TEST_DIR=${2:-"/weka/cli/fio-test/fio_data/$HOSTNAME"}
 
-TEST_SIZE=64m
-RUNTIME=10s
+TEST_SIZE=2048G
+RUNTIME=1800s
 TEST_DIR="/weka/cli/fio-test/fio_data/$HOSTNAME"
 
 echo $TEST_SIZE

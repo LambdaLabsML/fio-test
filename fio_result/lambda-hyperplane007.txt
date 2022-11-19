@@ -1,0 +1,168 @@
+2048G
+/weka/cli/fio-test/fio_data/lambda-hyperplane007
+Fri Nov 18 13:24:11 CST 2022
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+write_throughput: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=libaio, iodepth=64
+...
+fio-3.16
+Starting 8 processes
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+write_throughput: Laying out IO file (1 file / 2097152MiB)
+
+write_throughput: (groupid=0, jobs=8): err= 0: pid=303101: Fri Nov 18 13:54:14 2022
+  write: IOPS=4883, BW=4884MiB/s (5121MB/s)(8586GiB/1800145msec); 0 zone resets
+    slat (usec): min=12, max=10199, avg=41.42, stdev=12.66
+    clat (usec): min=1017, max=1903.1k, avg=104795.70, stdev=77721.31
+     lat (usec): min=1052, max=1903.1k, avg=104837.32, stdev=77721.49
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   17], 10.00th=[   25], 20.00th=[   41],
+     | 30.00th=[   57], 40.00th=[   73], 50.00th=[   90], 60.00th=[  109],
+     | 70.00th=[  130], 80.00th=[  157], 90.00th=[  199], 95.00th=[  243],
+     | 99.00th=[  376], 99.50th=[  439], 99.90th=[  592], 99.95th=[  684],
+     | 99.99th=[  927]
+   bw (  MiB/s): min= 1344, max=11472, per=99.99%, avg=4883.44, stdev=95.87, samples=28800
+   iops        : min= 1344, max=11472, avg=4883.10, stdev=95.88, samples=28800
+  lat (msec)   : 2=0.01%, 4=0.09%, 10=1.35%, 20=5.54%, 50=19.23%
+  lat (msec)   : 100=29.25%, 250=40.08%, 500=4.23%, 750=0.20%, 1000=0.02%
+  lat (msec)   : 2000=0.01%
+  cpu          : usr=2.15%, sys=1.10%, ctx=8069911, majf=0, minf=191
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=0,8791619,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=4884MiB/s (5121MB/s), 4884MiB/s-4884MiB/s (5121MB/s-5121MB/s), io=8586GiB (9219GB), run=1800145-1800145msec
+Fri Nov 18 13:54:14 CST 2022
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+write_iops: (g=0): rw=randwrite, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.16
+Starting 1 process
+write_iops: Laying out IO file (1 file / 2097152MiB)
+
+write_iops: (groupid=0, jobs=1): err= 0: pid=308715: Fri Nov 18 14:24:16 2022
+  write: IOPS=119k, BW=466MiB/s (489MB/s)(819GiB/1800001msec); 0 zone resets
+    slat (nsec): min=740, max=9446.4k, avg=5038.49, stdev=3031.24
+    clat (usec): min=44, max=34726, avg=530.86, stdev=598.25
+     lat (usec): min=72, max=34729, avg=535.98, stdev=598.27
+    clat percentiles (usec):
+     |  1.00th=[  119],  5.00th=[  151], 10.00th=[  174], 20.00th=[  206],
+     | 30.00th=[  235], 40.00th=[  269], 50.00th=[  306], 60.00th=[  359],
+     | 70.00th=[  445], 80.00th=[  685], 90.00th=[ 1369], 95.00th=[ 1729],
+     | 99.00th=[ 2573], 99.50th=[ 3654], 99.90th=[ 5735], 99.95th=[ 6587],
+     | 99.99th=[ 8029]
+   bw (  KiB/s): min=143624, max=582608, per=99.98%, avg=477130.01, stdev=60065.34, samples=3600
+   iops        : min=35906, max=145652, avg=119282.50, stdev=15016.35, samples=3600
+  lat (usec)   : 50=0.01%, 100=0.21%, 250=34.67%, 500=38.99%, 750=7.59%
+  lat (usec)   : 1000=4.02%
+  lat (msec)   : 2=11.79%, 4=2.31%, 10=0.42%, 20=0.01%, 50=0.01%
+  cpu          : usr=16.17%, sys=59.07%, ctx=14179748, majf=0, minf=48
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=0,214757165,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=466MiB/s (489MB/s), 466MiB/s-466MiB/s (489MB/s-489MB/s), io=819GiB (880GB), run=1800001-1800001msec
+Fri Nov 18 14:24:17 CST 2022
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+read_throughput: (g=0): rw=read, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=libaio, iodepth=64
+...
+fio-3.16
+Starting 8 processes
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+read_throughput: Laying out IO file (1 file / 2097152MiB)
+
+read_throughput: (groupid=0, jobs=8): err= 0: pid=346346: Fri Nov 18 17:49:26 2022
+  read: IOPS=6740, BW=6741MiB/s (7068MB/s)(11.6TiB/1800074msec)
+    slat (usec): min=4, max=8672, avg=22.05, stdev= 9.58
+    clat (usec): min=406, max=30027k, avg=75942.07, stdev=669497.65
+     lat (usec): min=435, max=30027k, avg=75964.27, stdev=669498.04
+    clat percentiles (usec):
+     |  1.00th=[    1729],  5.00th=[    3556], 10.00th=[    5604],
+     | 20.00th=[    9241], 30.00th=[   12518], 40.00th=[   14484],
+     | 50.00th=[   16450], 60.00th=[   21890], 70.00th=[   36439],
+     | 80.00th=[   65799], 90.00th=[   83362], 95.00th=[  235930],
+     | 99.00th=[  425722], 99.50th=[  463471], 99.90th=[14831059],
+     | 99.95th=[14965277], 99.99th=[14965277]
+   bw (  MiB/s): min= 1170, max=18540, per=100.00%, avg=8877.82, stdev=736.25, samples=17899
+   iops        : min= 1170, max=18540, avg=8877.49, stdev=736.25, samples=17899
+  lat (usec)   : 500=0.01%, 750=0.06%, 1000=0.14%
+  lat (msec)   : 2=1.38%, 4=4.46%, 10=16.15%, 20=35.05%, 50=16.91%
+  lat (msec)   : 100=19.00%, 250=2.04%, 500=4.51%, 750=0.08%, 1000=0.01%
+  lat (msec)   : 2000=0.01%, >=2000=0.21%
+  cpu          : usr=0.16%, sys=2.22%, ctx=12133839, majf=0, minf=87832
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=12133203,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=6741MiB/s (7068MB/s), 6741MiB/s-6741MiB/s (7068MB/s-7068MB/s), io=11.6TiB (12.7TB), run=1800074-1800074msec
+Fri Nov 18 17:49:26 CST 2022
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+read_iops: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+fio-3.16
+Starting 1 process
+read_iops: Laying out IO file (1 file / 2097152MiB)
+
+read_iops: (groupid=0, jobs=1): err= 0: pid=358091: Fri Nov 18 18:52:52 2022
+  read: IOPS=136k, BW=533MiB/s (559MB/s)(937GiB/1800001msec)
+    slat (nsec): min=1071, max=5941.8k, avg=4445.45, stdev=2261.61
+    clat (usec): min=103, max=46395, avg=464.20, stdev=515.88
+     lat (usec): min=106, max=46398, avg=468.72, stdev=516.00
+    clat percentiles (usec):
+     |  1.00th=[  237],  5.00th=[  289], 10.00th=[  314], 20.00th=[  338],
+     | 30.00th=[  359], 40.00th=[  375], 50.00th=[  392], 60.00th=[  412],
+     | 70.00th=[  441], 80.00th=[  482], 90.00th=[  545], 95.00th=[  619],
+     | 99.00th=[ 2507], 99.50th=[ 4080], 99.90th=[ 7504], 99.95th=[ 9110],
+     | 99.99th=[13829]
+   bw (  KiB/s): min=161672, max=830624, per=99.98%, avg=545595.60, stdev=153399.79, samples=3599
+   iops        : min=40418, max=207656, avg=136398.92, stdev=38349.97, samples=3599
+  lat (usec)   : 250=1.50%, 500=82.32%, 750=13.29%, 1000=0.80%
+  lat (msec)   : 2=0.82%, 4=0.75%, 10=0.48%, 20=0.03%, 50=0.01%
+  cpu          : usr=12.91%, sys=64.68%, ctx=7839672, majf=0, minf=50
+  IO depths    : 1=0.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=245567577,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=533MiB/s (559MB/s), 533MiB/s-533MiB/s (559MB/s-559MB/s), io=937GiB (1006GB), run=1800001-1800001msec
+Fri Nov 18 18:52:52 CST 2022

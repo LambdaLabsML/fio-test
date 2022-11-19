@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p /weka/cli/fio-test/fio_result
 
 for i in {001..025}
 do
